@@ -1,0 +1,278 @@
+       /*------------------*/
+       /* MEDIA-QUERY */
+       /*------------------*/
+       @media(max-width: 1024px) {
+           .container {
+               /* padding: 50px; */
+               /* width: 100%; */
+           }
+
+           .body_container {
+               width: 270%;
+               margin: 0 auto;
+               padding: 0px 40px 0px 40px;
+           }
+
+           footer div {
+               line-height: 200px;
+               text-align: center;
+               font-size: 25px;
+               width: 260%;
+           }
+
+           .hidden_xs {
+               display: none;
+           }
+
+           .visible_xs {
+               display: flex;
+           }
+
+           /*--------*/
+           /* HEADER */
+           /*--------*/
+           header .container {
+               padding: 60px 10px 10px 10px;
+               width: 260%;
+           }
+
+           .container>div {
+               display: flex;
+               justify-content: space-between;
+               width: 100%;
+               align-items: center;
+           }
+
+           .men_burger i {
+               display: flex;
+               margin-left: 20px
+           }
+
+           .login i:first-child {
+               margin-right: 10px;
+           }
+
+           .container img {
+               width: 35%;
+               padding-top: 40px;
+           }
+
+           /*------------------------------*/
+           /* INFO CONTAINER DEBUT DU MAIN */
+           /*------------------------------*/
+
+           .info_container h1 {
+               margin-top: 15vh;
+               font-size: 100px;
+           }
+
+           .nav_menu {
+               display: flex;
+               width: 100%;
+               overflow-x: scroll;
+           }
+
+           .nav_menu div {
+               font-size: xx-large;
+               width: 49%;
+               height: 100px;
+               flex: none;
+               margin-bottom: 30px;
+               align-items: center;
+               justify-content: space-between;
+               padding: 0px 40px 0px 70px;
+           }
+
+
+           /* .nav_menu div:not(:last-child) {
+               margin-right: 0px;
+           }
+
+           .nav_menu div:nth-child(2n+1) {
+               margin-right: 6%;
+           }
+
+           .nav_menu div:last-child {
+               width: 25%;
+               margin: 0 auto;
+               align-items: center;
+               justify-content: space-around;
+           } */
+
+           /*---------*/
+           /* PICTURES*/
+           /*---------*/
+           .picture .col_2 img {
+               display: none;
+           }
+
+           .picture .col_1 img {
+               width: 100%;
+               height: 100%;
+               object-fit: cover;
+               border-top-left-radius: 0px;
+               border-bottom-left-radius: 0px;
+           }
+
+           /*---------*/
+           /* MAPS*/
+           /*---------*/
+           .maps {
+               display: block;
+           }
+
+           .maps .col_1 {
+               width: 100%;
+               font-size: 35px;
+               margin-top: 40px;
+               margin-bottom: 100px;
+           }
+
+           .maps .col_1 h2 {
+               font-size: 50px;
+               margin-bottom: 20px;
+           }
+
+           .maps .col_2 {
+               width: 100%;
+           }
+
+           .maps .col_2 div {
+               background: rgb(255, 93, 93);
+               padding: 32px 32px 8px;
+               border-top-left-radius: 20px;
+               border-top-right-radius: 20px;
+               height: 60vh;
+
+           }
+
+           .maps .col_2 div h2 {
+               font-size: 50px;
+               width: 100%;
+           }
+
+           .maps .col_2 div p {
+               font-size: 35px;
+               width: 100%;
+               padding: 25px 0px 25px 0px;
+           }
+
+           .maps .col_2 div input {
+               font-size: 30px;
+               padding: 25px;
+
+           }
+
+           .maps div img {
+               height: 350px;
+           }
+
+           /*------------------*/
+           /* TITLE */
+           /*------------------*/
+           .title h1 {
+               text-align: center;
+               font-size: 55px;
+           }
+
+           /*------------------*/
+           /* CONSEILS */
+           /*------------------*/
+           .conseils {
+               height: auto;
+               width: 100%;
+               flex-wrap: wrap;
+               justify-content: space-between;
+               font-size: 25px;
+           }
+
+           .conseils div {
+               width: 48%;
+               margin-top: 20px;
+           }
+
+           .conseils div:not(:first-child) {
+               margin-left: 0px;
+           }
+
+           .conseils div img {
+               width: 40%;
+           }
+
+           /*------------------*/
+           /* carrousel*/
+           /*------------------*/
+           .carrousel {
+               display: block;
+           }
+
+           .carrousel section {
+               display: flex;
+               width: 100%;
+               overflow-x: scroll;
+           }
+
+           .carrousel>div {
+               width: 100%;
+           }
+
+           .carrousel section div {
+               width: 100%;
+               flex-shrink: 0;
+               margin-left: 10px;
+               font-size: 12px;
+               cursor: pointer;
+           }
+
+           .carrousel>div h6 {
+               font-size: 12px;
+               margin-top: 20px;
+           }
+
+           .carrousel section div img:first-child {
+               object-fit: cover;
+               height: 75%;
+               width: 98%;
+           }
+
+           .carrousel section div img:not(:first-child) {
+               width: 20%;
+           }
+
+           .carrousel section div h3 {
+               font-size: 40px;
+           }
+
+           .carrousel div p {
+               font-size: 30px;
+
+           }
+
+           .carrousel>div h2 {
+               font-size: 40px;
+
+           }
+
+           .carrousel>div p {
+               font-size: 25px;
+           }
+
+           .carrousel>div h6 {
+               font-size: 20px;
+           }
+
+           /*-------------------*/
+           /* FORMULAIRE (modal)*/
+           /*-------------------*/
+           .modal {
+               width: 90%;
+               height: 60%;
+           }
+
+           .modal form input,
+           textarea {
+               width: 70%;
+               padding: 25px;
+               font-size: 35px;
+           }
+       }

@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="./assets/css/reset.css"> -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/mediaquery.css">
+    <link rel="icon" type="image/png" href="./assets/img/logo.png" />
+    <script src="./assets/js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://kit.fontawesome.com/fedf5f0d30.js" crossorigin="anonymous"></script>
+    
+    <title>TripAvisor version 2</title>
+</head>
+<body>
+    <header>
+        <section class="container">
+            <div>
+                <div class="men_burger visible_xs"><i class="fas fa-bars fa-4x"></i></div>
+                <img src="./assets/img/logo.svg" alt="">
+                <input type="search" class="hidden_xs" placeholder="Tapez votre recherche" value="">
+                <div class="login visible_xs">
+                    <i class="fas fa-user fa-4x" id="openMyModal"></i>
+                    <i class="fas fa-search fa-4x"></i>
+                </div>
+                
+                
+            </div>
+            <nav class="hidden_xs">
+                <div><i class="fas fa-plus-circle"></i><span>Publier</span></div>
+                <div><i class="far fa-heart"></i><span>Alertes</span></div>
+                <div><i class="far fa-bell"></i><span>Voyages</span></div>
+                <button id="openMyModal2">Connectez-vous</button>
+            </nav>
+        </section>
+    </header>
+
+    <main class="body_container">
+        <!-- button info -->
+        <div class="info_container ">
+            <h1><span>Explorez</span>Paris</h1> 
+            <!-- <button id="openMyModal">Connectez-vous</button> -->
+
+            <nav class="nav_menu">
+                <div><span>Conseils de voyage</span><i class="far fa-flag"></i></i></div>
+                <div><span>Hôtels</span><i class="fas fa-bed"></i></div>
+                <div><span>Locations de vacances</span><i class="fas fa-house-user"></i></div>
+                <div><span>Activités</span><i class="fas fa-ticket-alt"></i></div>
+                <div><span>Restaurants</span><i class="fas fa-utensils"></i></div>
+                <div><span>Forums de voyage</span><i class="far fa-comments"></i></div>
+                <!-- <div><span>Vols</span><i class="fas fa-plane"></i></div> -->
+                <div><span>plus</span><i class="fas fa-ellipsis-h"></i></div>
+            </nav>
+        </div>
+
+        <!-- pictures -->
+        <div class="picture">
+            <div class="col_1">
+                <img src="./assets/img/caption1.jpg" alt="">
+            </div>
+            <div class="col_2">
+                <img src="./assets/img/caption2.jpg" alt="">
+                <img src="./assets/img/caption3.jpg" alt="">
+            </div>
+        </div>
+
+        <!-- breadcrumb -->
+        <div class="breadcrumb">
+            <ul >
+                <li><a href="#" style="color: white;">- </a></li>
+                <li><a href="#">Europe</a></li>
+                <li><a href="#">France</a></li>
+                <li><a href="#">Île-de-France</a></li>
+                <li><a href="#">Paris</a></li>
+              </ul>
+
+              <p>Visiter: Paris</p>
+        </div>
+
+        <!-- Organisation MAPS -->
+        <div class="maps">
+            <div class="col_1">
+                <h2>La Ville Lumière éblouit en tous points</h2>
+                <p>Aucun autre endroit au monde ne fait autant rêver que Paris. La ville séduit par son art, son architecture, sa culture et sa cuisine, mais il y a aussi des merveilles plus discrètes qui n’attendent qu’à être explorées : les ruelles pavées pittoresques, les pâtisseries au coin de la rue et les petits bistrots douillets qui vous invitent à boire un verre de beaujolais. Préparez-vous à vous approprier Paris.</p>
+            </div>
+            <div  class="col_2">
+                <div>
+                    <h2>Paris: commencez à organiser !</h2>
+                    <p>Créez un voyage pour enregistrer et organiser toutes vos idées et les visualiser sur une carte.</p>
+                    <input type="button" value="Créer votre voyage">
+                </div>
+                <img src="./assets/img/map.png" alt="">
+            </div>
+        </div>
+
+        <!-- Conseils de voyage -->
+        <div class="title">
+            <h1>Conseils de voyage</h1>
+        </div>
+
+        <!-- bouton conseils -->
+        <div class="conseils">
+            <div>
+                <img src="./assets/img/visit.svg" alt="">
+                <p>Meilleur période pour visiter</p>
+            </div>
+            <div>
+                <img src="./assets/img/around.svg" alt="">
+                <p>Se déplacer</p>
+            </div>
+            <div>
+                <img src="./assets/img/customs.svg" alt="">
+                <p>Coutumes locales</p>
+            </div>
+            <div>
+                <img src="./assets/img/tips.svg" alt="">
+                <p>Conseils de pros</p>
+            </div>
+        </div>
+
+        <!-- Immanquable à Paris -->
+        <div class="title">
+            <h1>Immanquable à Paris</h1>
+        </div>
+
+        <!-- Carrousel -->
+        <div class="carrousel">
+            <div>
+                <h2>Se divertir</h2>
+                <p>Des lieux à voir, des rues à explorer et des expériences emblématiques à Paris.</p>
+                <h6>Tout afficher</h6>
+
+            </div>
+            <section>
+                <div>
+                    <img src="./assets/img/carrousel/eiffeltoren.jpg" alt="">
+                    <h3> Tour Eiffel</h3>
+                        <img src="./assets/img/carrousel/point_vert.PNG" alt="">140 238 avis
+                    <p>Tours et plateformes d'observation, Monuments & Points d'intérêt</p>
+                </div>
+                <div>
+                    <img src="./assets/img/carrousel/caption.jpg" alt="">
+                    <h3>Musée du Louvre</h3>
+                        <img src="./assets/img/carrousel/point_vert.PNG" alt="">90 620 avis
+                    <p>Bâtiments architecturaux, Musées d'art</p>
+                </div>
+                <div>
+                    <img src="./assets/img/carrousel/arc-de-triomphe-at-night.jpg" alt="">
+                    <h3>Arc de Triomphe</h3>
+                        <img src="./assets/img/carrousel/point_vert.PNG" alt="">56 972 avis
+                    <p>Bâtiments architecturaux, Sites historiques</p>
+                </div>
+                <div>
+                    <img src="./assets/img/carrousel/rodin.jpg" alt="">
+                    <h3>Musée Rodin</h3>
+                        <img src="./assets/img/carrousel/point_vert.PNG" alt="">36 850 avis
+                    <p>Musées spécialisés</p>
+                </div>
+                <div>
+                    <img src="./assets/img/carrousel/notre-dame.jpg" alt="">
+                    <h3>Cathédrale Notre-Dame de Paris</h3>
+                        <img src="./assets/img/carrousel/point_vert.PNG" alt="">72 435 avis
+                    <p>Bâtiments architecturaux, Sites historiques</p>
+                </div>
+                <div>
+                    <img src="./assets/img/carrousel/librairie.jpg" alt="">
+                    <h3>Librairie Shakespear and Compagny</h3>
+                        <img src="./assets/img/carrousel/point_vert.PNG" alt="">40 876 avis
+                    <p>Bibliothèques, Grands magasins</p>
+                </div>
+                <div>
+                    <img src="./assets/img/carrousel/musée-orsay.jpg" alt="">
+                    <h3>Musée d'Orsay</h3>
+                        <img src="./assets/img/carrousel/point_vert.PNG" alt="">30 466 avis
+                    <p>Musées d'art</p>
+                </div>
+               
+                
+            </section>
+            
+
+        </div>
+    </main>
+
+    <footer class="footer_nav">
+        <div>
+            <p>Page TripAvisor réalisé dans le cadre d'une formation (LE REACTEUR)</p>
+        </div>
+    </footer>
+
+
+
+    
+    <div class="modal hidden">
+        <div>
+            <img src="./assets/img/logo.svg" alt="">
+            <i class="fas fa-times fa-2x " id="closeMyModal"></i>
+        </div><hr>
+        
+        <h3>formulaire <span>d'inscription</span></h3>
+        <form id="contact-form">
+            <input type="text" id="firstname" name="firstname" placeholder="Prénom" value="nono">
+            <input type="text" id="lastname" name="lastname" placeholder="Nom" value="Malf">
+            <input type="email" id="email" name="email" placeholder="Email" value="nono@malf">
+            <textarea name="message" id="message" cols="30" rows="7">caaaaaaaaaaaa</textarea>
+            <input type="submit" value="Valider">
+        </form>
+    </div>
+    
+</body>
+</html>
+
+<!-- class="nav_logo" -->

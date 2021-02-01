@@ -1,0 +1,532 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* :root {
+     --bg-map(rgb(255, 93, 93));
+ } */
+
+/* CSS global */
+footer {
+    line-height: 200px;
+    text-align: center;
+}
+
+.body_container {
+    width: 1024px;
+    margin: 0 auto;
+}
+
+.container {
+    width: 1024px;
+    margin: 0 auto;
+}
+
+/***************************************/
+/********hidden media-query*************/
+.hidden_xs {
+    display: flex;
+}
+
+.visible_xs {
+    display: none;
+}
+
+/********hidden modal*************/
+.hidden {
+    display: none;
+}
+
+.display {
+    display: block;
+}
+
+/*------------------*/
+/* HEADER */
+/*------------------*/
+header {
+    background-color: white;
+    height: 60px;
+    margin-bottom: 5vh;
+    font-weight: bold;
+}
+
+header .container {
+    box-sizing: border-box;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container div:first-child {
+    display: flex;
+    align-items: center;
+}
+
+.men_burger i {
+    display: none;
+}
+
+.container img {
+    width: 40%;
+}
+
+header input {
+    border-radius: 10px;
+    margin-left: 20px;
+    padding: 5px;
+}
+
+header nav {
+    /*permet de centrer les éléments à l'horizontal dans la navBar*/
+    display: flex;
+    align-items: center;
+}
+
+header button {
+    background-color: black;
+    border: none;
+    width: 200px;
+    border-radius: 20px;
+    padding: 10px;
+    font-weight: bold;
+    font-size: 16px;
+    color: white;
+    cursor: pointer;
+}
+
+header button:hover {
+    background-color: rgb(54, 54, 54);
+}
+
+header nav div {
+    margin-right: 10px;
+    display: flex;
+    padding: 10px;
+    cursor: pointer;
+}
+
+header nav div:hover {
+    border: solid 1px black;
+    /* box-sizing: border-box; */
+    border-radius: 10px;
+}
+
+header nav i {
+    margin-right: 5px;
+}
+
+/*-----------------------------*/
+/* INFO CONTAINER DEBUT DU MAIN*/
+/*-----------------------------*/
+.info_container {
+    margin-bottom: 20px;
+}
+
+.info_container h1 {
+    font-size: 60px;
+}
+
+h1 span {
+    color: #ff5d5d;
+}
+
+.nav_menu {
+    display: flex;
+    margin-top: 30px;
+}
+
+.nav_menu div {
+    border: 2px solid rgb(2, 2, 2);
+    display: flex;
+    justify-content: space-between;
+    flex: 1;
+    border: solid 1px black;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.nav_menu div:hover {
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    transition-duration: 0.5s;
+}
+
+.nav_menu div:not(:last-child) {
+    margin-right: 20px;
+}
+
+.nav_menu i {
+    margin-right: 0px;
+}
+
+/*------------------*/
+/* PICTURE */
+/*------------------*/
+.picture {
+    width: 100%;
+    display: flex;
+    cursor: pointer;
+}
+
+.picture .col_1 {
+    width: 150%;
+    display: flex;
+}
+
+.picture .col_1 img {
+    width: 100%;
+    object-fit: cover;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.picture .col_1 img:hover {
+    opacity: 80%;
+}
+
+.picture .col_2 img:first-child {
+    border-top-right-radius: 20px;
+}
+
+.picture .col_2 img:last-child {
+    border-bottom-right-radius: 20px;
+}
+
+.picture .col_2 img {
+    height: 49.5%;
+    width: 99%;
+    object-fit: cover;
+    margin-left: 5px;
+}
+
+.picture .col_2 img:hover {
+    opacity: 80%;
+}
+
+/*------------------*/
+/* BREADCRUMB*/
+/*------------------*/
+.breadcrumb {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.breadcrumb ul {
+    display: flex;
+    align-items: center;
+}
+
+.breadcrumb ul li,
+a {
+    font-weight: bold;
+    color: #000000;
+    list-style: none;
+    text-decoration: none;
+}
+
+.breadcrumb ul li a:hover {
+    text-decoration: underline;
+    color: rgb(78, 78, 78);
+}
+
+.breadcrumb ul li+li::after {
+    padding: 8px;
+    color: black;
+    content: ">";
+}
+
+.breadcrumb ul li:last-child {
+    padding: 8px;
+    color: black;
+    content: ">";
+}
+
+.breadcrumb p {
+    font-weight: bold;
+}
+
+/*------------------*/
+/* MAPS */
+/*------------------*/
+.maps {
+    margin-top: 20px;
+    display: flex;
+}
+
+.maps div p {
+    margin-top: 10px;
+    width: 90%;
+}
+
+.maps .col_1 {
+    width: 70%;
+}
+
+.maps .col_2 {
+    width: 60%;
+
+}
+
+.maps .col_2 div {
+    background: rgb(255, 93, 93);
+    padding: 32px 32px 8px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    height: 200px;
+}
+
+.maps .col_2 div h2 {
+    padding: 5px 5px;
+}
+
+.maps .col_2 div p {
+    padding: 5px 5px;
+}
+
+.maps .col_2 div input {
+    background: #000;
+    color: white;
+    padding: 10px 16px;
+    border-radius: 21px;
+    border: none;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.maps .col_2 div input:hover {
+    background: rgb(66, 66, 66);
+
+}
+
+.maps div img {
+    height: 150px;
+    width: 100%;
+    object-fit: cover;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+/*------------------*/
+/* TITLE */
+/*------------------*/
+.title {
+    text-align: center;
+}
+
+.title h1 {
+    position: relative;
+    font-size: 25px;
+    z-index: 1;
+    overflow: hidden;
+    text-align: center;
+}
+
+.title h1:before,
+.title h1:after {
+    position: absolute;
+    top: 51%;
+    overflow: hidden;
+    width: 51%;
+    height: 0.5px;
+    content: '\a0';
+    background-color: rgb(0, 0, 0);
+}
+
+.title h1:before {
+    margin-left: -52%;
+    text-align: right;
+}
+
+.title h1:after {
+    margin-left: 1%;
+    text-align: right;
+}
+
+.color {
+    background-color: #ccc;
+}
+
+/*------------------*/
+/* CONSEILS */
+/*------------------*/
+.conseils {
+    display: flex;
+    height: 80px;
+    margin: 50px 0px 50px 0px;
+}
+
+.conseils div {
+    width: 25%;
+    display: flex;
+    align-items: center;
+    border: solid 2px rgb(216, 216, 216);
+    border-radius: 10px;
+    font-weight: bold;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.conseils div:hover {
+    border: solid 2px black;
+    text-decoration: underline 3px;
+}
+
+.conseils div:not(:first-child) {
+    margin-left: 20px;
+}
+
+.conseils div img {
+    width: 40%;
+}
+
+/*------------------*/
+/* carrousel*/
+/*------------------*/
+.carrousel {
+    display: flex;
+    margin-top: 50px;
+}
+
+.carrousel>div p {
+    width: 95%;
+    font-size: 14px;
+    margin-top: 20px;
+}
+
+.carrousel>div h6 {
+    font-size: 12px;
+    margin-top: 20px;
+}
+
+.carrousel>div h6:hover {
+    text-decoration: underline 3px;
+    cursor: pointer;
+}
+
+.carrousel>div {
+    width: 25%;
+}
+
+.carrousel section {
+    display: flex;
+    width: 75%;
+    overflow-x: scroll;
+}
+
+.carrousel section div {
+    width: 32%;
+    flex-shrink: 0;
+    margin-left: 10px;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.carrousel section div img:first-child {
+    object-fit: cover;
+    height: 170px;
+    width: 100%;
+}
+
+.carrousel section div img:not(:first-child) {
+    width: 80px;
+}
+
+.carrousel section div img:hover {
+    opacity: 90%;
+}
+
+.carrousel section div h3:hover {
+    text-decoration: underline;
+}
+
+/*--------------------*/
+/* FORMULAIRE (modal) */
+/*--------------------*/
+.modal {
+    background-color: rgb(255, 255, 255);
+    position: fixed;
+    width: 30%;
+    text-align: center;
+    top: 17%;
+    left: 50%;
+    padding: 20px;
+    transform: translate(-50%, 0);
+    border: 1px solid black;
+}
+
+body.modal-open {
+    background: #000;
+    overflow: hidden;
+
+    overflow: hidden;
+    position: fixed;
+}
+
+
+.modal div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.modal hr {
+    margin-left: 20px;
+    margin-right: 20px;
+    color: blue;
+}
+
+.modal img {
+    width: 70%;
+}
+
+.modal i {
+    cursor: pointer;
+}
+
+.modal i:hover {
+    color: rgb(92, 92, 92);
+}
+
+.modal h3 {
+    text-align: center;
+    font-size: 25px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: rgb(66, 133, 0);
+}
+
+.modal form {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.modal form input,
+textarea {
+    width: 70%;
+    text-align: center;
+    border-radius: 10px;
+    border: solid 2px rgb(179, 179, 179);
+    padding: 5px;
+    margin-bottom: 20px;
+}
+
+input[type=submit] {
+    font-weight: bold;
+    font-size: 16px;
+    color: white;
+    border: none;
+    background: rgb(39, 107, 59);
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background: rgb(37, 73, 48);
+}
